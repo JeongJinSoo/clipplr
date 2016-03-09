@@ -1,0 +1,298 @@
+@charset 'utf-8';
+
+/* Editor */
+.frm{
+  margin-top:20px;
+}
+.avatar{
+  padding:10px 0 10px 60px;
+  img{
+    width:50px;
+    height:50px;
+  }
+  .socialur_name{
+    height:50px;
+    line-height:50px;
+  }
+}
+
+.new_title, .new_thumb{
+  width:100%;
+  border:0;
+  outline:none;
+  color: rgba(0,0,0,0.3);
+}
+
+.new_title{
+  font-weight: 700;
+  font-size: 36px;
+  margin-top:20px;
+  margin-bottom:21px;
+  height:43px;
+}
+
+.new_thumb{
+  font-size: 16px;
+  margin-bottom:21px;
+}
+
+.new_title::-webkit-input-placeholder,
+.new_thumb::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.3);
+}
+
+.btnThumbnail, .btnTitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  background: #fff;
+  border:1px solid $green_color;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.linkFrame {
+  position:relative;
+  margin-bottom: 21px;
+}
+
+.modal_link{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  padding: 10px;
+  box-sizing: border-box;
+  .txt_input{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    height:30px;
+    padding-left:5px;
+  }
+}
+
+div.title.ng-scope{
+  .title{
+    position:relative;
+    color: #444;
+    font-size: 36px !important;
+    line-height: 1.12;
+    display: block;
+    font-weight: 700;
+    margin-bottom:15px;
+    word-break: break-all;
+  }
+  a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
+div.thumnnail.ng-scope{
+  span{
+    display: block;
+    margin-bottom: 10px;
+  }
+  img{
+    width:100%;
+  }
+  a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
+div.description.ng-scope{
+  font-size:18px;
+  .editor_mod, .editor_del{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: #fff;
+  }
+  .editor_del{
+    top:25px;
+  }
+}
+// .post_description{
+//   padding-top: 20px;
+//   border-top: 1px solid rgba(0, 0, 0, 0.1);
+// }
+.link_cont{
+  position:relative;
+  width:70%;
+  display:table-cell;
+  padding-left:10px;
+  font-size:13px;
+  vertical-align:top;
+  padding-right:16px;
+  .fa-bookmark-o{
+    font-size:22px;
+    position: absolute;
+    bottom:-2px;
+    left:10px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+.link_fail{
+    text-align:center;
+    font-size: 14px;
+}
+.link.ng-scope/*, .post_description*/{
+  .link_url{
+    width:100%;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    display: block;
+    .data_url{
+      display:table;
+      width:100%;
+      padding:5px;
+      box-sizing:border-box;
+    }
+  }
+  .link_img{
+    width:30%;
+    vertical-align:middle;
+    img{
+      display: block;
+      width:100%;
+    }
+  }
+  .fa-pencil{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: #fff;
+  } 
+  .link_img{
+    display:table-cell;
+  }
+  .link_title{
+    position: relative;
+    display:block;
+    padding-bottom:15px;
+    span{
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .title{
+    display: block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    font-size:16px;
+  }
+  .underline{
+    position:absolute;
+    bottom:0;
+    right:5px;
+    display:inline-block;
+    color:forestgreen !important;
+    font-size:12px;
+  }
+  .underline:hover{
+    text-decoration: underline;
+  }
+}
+
+.err_src{display:none !important;}
+
+div.description.ng-scope ul,
+div.description.ng-scope ol{
+  padding-left: 25px;
+}
+div.description.ng-scope p{
+ font-size:18px;
+}
+div.description.ng-scope h1{
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+div.description.ng-scope h2{
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+div.description.ng-scope h3{
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+div.description.ng-scope h4{
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.description.ng-scope h5{
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.description.ng-scope h6{
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.linkFrame .description {
+  word-break: break-all;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.linkFrame blockquote {
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 0;
+  padding-left: 20px;
+  position: relative;
+  font-style: italic;
+  border-left: solid 5px #cccccc;
+}

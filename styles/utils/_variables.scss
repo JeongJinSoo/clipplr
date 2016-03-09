@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+$green_color: #02b875;
+$darkgreen: #00ab6b;
+$green_rgba: rgba(76,175,80,1); /* ?? */
+
+%clearfix{
+  &:after{
+      content: '';
+      display: block;
+      clear: both;
+  }
+}
+
+%ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display:block;
+}

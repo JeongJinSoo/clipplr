@@ -1,0 +1,35 @@
+@charset 'utf-8';
+/* 
+  SCSS files
+  Author: JJ81 & JeongJinSoo;
+*/
+@import
+  'utils/variables',
+  'utils/mixins',
+  'utils/functions';
+
+@import 'vendors/normalize';
+@import 'base/base';
+
+@import
+  'layout/grid',
+  'layout/header',
+  'layout/pagination';
+
+@import 
+  'components/button',
+  'components/loader';
+
+@import 
+  'pages/list',
+  'pages/edit';
+
+@import 'themes/default';
+@import 'vendors/froala';
+
+/** 
+  아래에 있는 스타일 형식은 어디서 쓰는지 알 수 없으므로 
+  명확하게 네이밍으로 표시하여 파일로 나누어 명확히 정의한 후에
+  import한다.
+*/
+@import 'shame/temp';

@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+body{
+  font-family: 'Arial', sans-serif, 'Helvetica' 
+}
+
+a{
+  text-decoration: none
+}
+
+button{
+  cursor: pointer;
+}
+
+.blind{
+  display: none !important;
+  position: absoulute;
+  top: -9999em;
+  left: -9999em;
+}
+
+.float_left{
+  float:left
+}
+
+.float_right{
+  float:right
+}

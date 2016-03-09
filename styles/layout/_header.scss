@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+%header{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    /* padding: 10px 0; */
+    min-height: 26px;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 0 1px rgba(0,0,0,0.15);
+    z-index:20;
+    h1{
+        font-size: 20px;
+        font-weight: bold;
+        color:rgba(0, 0, 0, 0.8);
+    }
+}
+
+.layer_header{
+    @extend %header;
+}
+
+.header{
+  @extend %header;
+  .btn_right{
+      position: absolute;
+      top: 13px;
+      right: 20px;
+  }
+  .btn_left{
+      position:absolute;
+      top:8px;
+      left:20px;
+  }
+}
