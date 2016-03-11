@@ -11,27 +11,26 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AppComponent;
+    var Contents;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            Contents = (function () {
+                function Contents() {
                 }
-                AppComponent = __decorate([
+                Contents = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        templateUrl: 'app/list/app.list.html'
+                        templateUrl: 'src/contents/contents.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], Contents);
+                return Contents;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("Contents", Contents);
         }
     }
 });
-//# sourceMappingURL=app.list.js.map
+//# sourceMappingURL=contents.js.map

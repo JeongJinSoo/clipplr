@@ -1,0 +1,64 @@
+<div class="header">
+    <h1>Clipplr</h1>
+    
+    <div class="btn_left">
+    	<a class="btn_back"><i class="fa fa-angle-left"></i></a>
+    </div>
+
+    <div class="btn_right">
+		<!--<a href class="btn_clips" ng-click="clipAction()">Clips</a>-->
+		<a class="btn_clips">수정</a>
+    </div>
+</div>
+<!-- //header -->
+<hr class="blind" />
+
+<!--<div class="contents" ng-if="list.length == 0">-->
+	<!--You did wrong access.-->
+<!--</div>-->
+
+<!-- contents -->
+<div class="contents">
+	<div class="thumbnail cont_view">
+	  <span class="list_img"><span class="fill_ratio"><img width="100%"/></span></span>
+	   <span class="list_tit"></span>
+	  <div class="action_count">
+	      <span class="hits"><i class="fa fa-heart-o"></i>{{list.hit_counts | number}}</span>
+	      <!--<span class="put"><i class="fa fa-paperclip"></i>{{list.clip_counts | number}}</span>-->
+	  </div>
+		<div class="hash_tag">
+	      <button class="tag_button" ng-repeat="tag in list.has_tag track by $index">#{{tag}}</button>
+	  </div>
+	</div>
+
+   <hr class="blind" />
+
+	<!-- Contents Area by Editor -->
+	<div class="admin_edit">
+	 <div class="description">
+		<div class="descContents"></div>
+	 </div><!-- / type c -->
+
+	 <div class="link">
+        <div class="link_url">
+          <div class="data_url">
+            <div class="link_img">
+              <a href="" target="_blank">
+                <!-- 웹문서에서 이미지를 단 한개도 스크래핑 하지 못했을 경우 처리가 되어야 함. -->
+                <img />
+              </a>
+
+            </div> <!-- / link_img -->
+
+            <a target="_blank" class="link_title">
+              <span class="title"></span>
+              <span class="description"></span>
+              <span class="underline host"></span>
+            </a>
+          </div>
+        </div>
+      </div> <!-- / type D -->
+   	</div>
+	<!-- // Template for type C and D-->
+	<!-- // Contents Area by Editor -->
+</div>
